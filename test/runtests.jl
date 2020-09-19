@@ -1,9 +1,5 @@
-using MyExample
-using Test
+using SafeTestsets
 
-MyExample.func(2,2)
+include("my_f_tests.jl")
 
-@testset "MyExample.jl" begin
-    @test MyExample.func(2,2) == 4
-    @test MyExample.func(3,3) == 9
-end
+@safetestset "My f tests" begin include("my_f_tests.jl") end
