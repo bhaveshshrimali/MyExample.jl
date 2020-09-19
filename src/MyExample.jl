@@ -1,5 +1,5 @@
 module MyExample
 
-# Write your package code here.
-
+include("somefile.jl")
 end
+ 
